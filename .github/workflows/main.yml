@@ -2,8 +2,9 @@ name: workflow-with-container
 on: push
 jobs:
   my-job:
-    runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
-      - name: my-step
+      - name: Clone-down
+        uses: actions/checkout@v3       
       - run: chmod +x ci/build-app.sh && ci/build-app.sh

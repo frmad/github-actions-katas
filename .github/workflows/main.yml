@@ -1,17 +1,9 @@
-name: hello-world
+name: workflow-with-container
 on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
+    container: gradle:6-jdk11
     steps:
-      - name: my-step0
-        run: echo "Hello World!"
-      - name: my-step1
-        run: echo "Hello World 2!"
-      - name: my-step2
-        run: echo "Hello!!!!!"
-      - name: my-step3
-        run: echo "Hello World 3!"
-      - run: ls -al
-      - uses: actions/checkout@v3.5.3
-      - run: ls -al
+      - name: my-step
+        run: ci/build-app.sh

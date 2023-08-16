@@ -13,4 +13,4 @@ jobs:
       - name: my-step
         run: echo "Hello World 3!"
       - uses: actions/checkout@v3.5.3
-        run: ls -al
+      - run: ls -al

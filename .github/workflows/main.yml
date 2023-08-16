@@ -1,8 +1,8 @@
-name: workflow-with-container
+name: hello-world
 on: push
 jobs:
-  my-job:
-   runs-on: ubuntu-latest
+  Build:
+    runs-on: ubuntu-latest
     container: gradle:6-jdk11
     steps:
       - name: Clone-down

@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+      - name: my-step
+        run: echo "Hello World 2!"
+      - name: my-step
+        run: echo "Hello!!!!!"
+      - name: my-step
+        run: echo "Hello World 3!"

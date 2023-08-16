@@ -6,4 +6,4 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: my-step
-        run: ci/build-app.sh
+      - run: chmod +x ci/build-app.sh && ci/build-app.sh

@@ -4,13 +4,14 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
+      - name: my-step0
         run: echo "Hello World!"
-      - name: my-step
+      - name: my-step1
         run: echo "Hello World 2!"
-      - name: my-step
+      - name: my-step2
         run: echo "Hello!!!!!"
-      - name: my-step
+      - name: my-step3
         run: echo "Hello World 3!"
+      - run: ls -al
       - uses: actions/checkout@v3.5.3
       - run: ls -al
